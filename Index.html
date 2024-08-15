@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="converter-container">
+        <h1>Currency Converter</h1>
+        <div class="converter-box">
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" placeholder="Enter amount" required>
+
+            <label for="fromCurrency">From:</label>
+            <select id="fromCurrency">
+                <option value="USD" data-symbol="$">USD - United States Dollar</option>
+                <option value="EUR" data-symbol="€">EUR - Euro</option>
+                <option value="GBP" data-symbol="£">GBP - British Pound</option>
+                <option value="INR" data-symbol="₹">INR - Indian Rupee</option>
+                <option value="JPY" data-symbol="¥">JPY - Japanese Yen</option>
+                <option value="AUD" data-symbol="A$">AUD - Australian Dollar</option>
+                <option value="CAD" data-symbol="C$">CAD - Canadian Dollar</option>
+                <option value="CHF" data-symbol="CHF">CHF - Swiss Franc</option>
+                <option value="CNY" data-symbol="¥">CNY - Chinese Yuan</option>
+                <option value="NZD" data-symbol="NZ$">NZD - New Zealand Dollar</option>
+                <option value="ZAR" data-symbol="R">ZAR - South African Rand</option>
+                <option value="SGD" data-symbol="S$">SGD - Singapore Dollar</option>
+                <option value="KRW" data-symbol="₩">KRW - South Korean Won</option>
+                <option value="MXN" data-symbol="MX$">MXN - Mexican Peso</option>
+                <option value="BRL" data-symbol="R$">BRL - Brazilian Real</option>
+                <option value="RUB" data-symbol="₽">RUB - Russian Ruble</option>
+                <option value="PKR" data-symbol="₨">PKR - Pakistani Rupee</option>
+                <!-- Arab Currencies -->
+                <option value="SAR" data-symbol="﷼">SAR - Saudi Riyal</option>
+                <option value="AED" data-symbol="د.إ">AED - UAE Dirham</option>
+                <option value="EGP" data-symbol="£">EGP - Egyptian Pound</option>
+                <option value="QAR" data-symbol="﷼">QAR - Qatari Riyal</option>
+                <option value="KWD" data-symbol="د.ك">KWD - Kuwaiti Dinar</option>
+                <option value="OMR" data-symbol="﷼">OMR - Omani Rial</option>
+                <option value="BHD" data-symbol="ب.د">BHD - Bahraini Dinar</option>
+                <option value="LYD" data-symbol="ل.د">LYD - Libyan Dinar</option>
+                <option value="JOD" data-symbol="د.ا">JOD - Jordanian Dinar</option>
+                <!-- Add more currencies as needed -->
+            </select>
+
+            <label for="toCurrency">To:</label>
+            <select id="toCurrency">
+                <option value="USD" data-symbol="$">USD - United States Dollar</option>
+                <option value="EUR" data-symbol="€">EUR - Euro</option>
+                <option value="GBP" data-symbol="£">GBP - British Pound</option>
+                <option value="INR" data-symbol="₹">INR - Indian Rupee</option>
+                <option value="JPY" data-symbol="¥">JPY - Japanese Yen</option>
+                <option value="AUD" data-symbol="A$">AUD - Australian Dollar</option>
+                <option value="CAD" data-symbol="C$">CAD - Canadian Dollar</option>
+                <option value="CHF" data-symbol="CHF">CHF - Swiss Franc</option>
+                <option value="CNY" data-symbol="¥">CNY - Chinese Yuan</option>
+                <option value="NZD" data-symbol="NZ$">NZD - New Zealand Dollar</option>
+                <option value="ZAR" data-symbol="R">ZAR - South African Rand</option>
+                <option value="SGD" data-symbol="S$">SGD - Singapore Dollar</option>
+                <option value="KRW" data-symbol="₩">KRW - South Korean Won</option>
+                <option value="MXN" data-symbol="MX$">MXN - Mexican Peso</option>
+                <option value="BRL" data-symbol="R$">BRL - Brazilian Real</option>
+                <option value="RUB" data-symbol="₽">RUB - Russian Ruble</option>
+                <option value="PKR" data-symbol="₨">PKR - Pakistani Rupee</option>
+                <!-- Arab Currencies -->
+                <option value="SAR" data-symbol="﷼">SAR - Saudi Riyal</option>
+                <option value="AED" data-symbol="د.إ">AED - UAE Dirham</option>
+                <option value="EGP" data-symbol="£">EGP - Egyptian Pound</option>
+                <option value="QAR" data-symbol="﷼">QAR - Qatari Riyal</option>
+                <option value="KWD" data-symbol="د.ك">KWD - Kuwaiti Dinar</option>
+                <option value="OMR" data-symbol="﷼">OMR - Omani Rial</option>
+                <option value="BHD" data-symbol="ب.د">BHD - Bahraini Dinar</option>
+                <option value="LYD" data-symbol="ل.د">LYD - Libyan Dinar</option>
+                <option value="JOD" data-symbol="د.ا">JOD - Jordanian Dinar</option>
+                <!-- Add more currencies as needed -->
+            </select>
+
+            <button id="convertButton">Convert</button>
+            <div id="result"></div>
+        </div>
+    </div>
+    <script src="App.js"></script>
+</body>
+</html>
